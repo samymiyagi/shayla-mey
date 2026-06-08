@@ -49,7 +49,7 @@ const CONFIG = {
     { url: "23.jpg", caption: "bleh",        rotation: -6 },
     { url: "24.jpg", caption: "First Moviee",      rotation:  5 },
     { url: "25.jpg", caption: "Remember asking me",    rotation: -3 },
-    { url: "26.jpg", caption: "kung bagay sayun yung polo \u2665",  rotation:  4 },
+    { url: "26.jpg", caption: "about your polo \u2665",  rotation:  4 },
     { url: "27.jpg", caption: "French Baker",        rotation: -5 },
     { url: "28.jpg", caption: "And our Dubai Chewy Choc",        rotation:  2 },
     { url: "29.jpg", caption: "Love you po \u2665",     rotation: -4 },
