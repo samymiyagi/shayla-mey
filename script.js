@@ -90,9 +90,8 @@ const CONFIG = {
     { url: "v5.MOV", caption: "Passenger Prince?"            },
     { url: "v6.MOV", caption: "Before Defense \u2665" },
     { url: "v7.MOV", caption: "Healthy Living"           },
-    { url: "v8.MOV", caption: "My favorite Moment"         },
     { url: "v9.MOV", caption: "Allen yung humpss"            },
-    { url: "v10.MOV", caption: "I misss the cookiesss"            },
+   
   ],
 
   /* ── Love Notes ── */
