@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Para kay Shiela</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Dancing+Script:wght@400;600;700&family=Jost:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ─── LOADING SCREEN ─────────────────────────────────────── -->
+  <div id="loading-screen">
+    <div class="loading-inner">
+      <div class="loading-heart">♥</div>
+      <p class="loading-text">preparing something special…</p>
+    </div>
+  </div>
+
+  <!-- ─── FLOATING MUSIC PLAYER ────────────────────────────────── -->
+<div id="music-btn" class="music-btn" title="Play our song">
+  <div class="music-icon">♪</div>
+  <div class="music-player" id="music-player">
+    <div class="music-player-header">
+      <span class="music-title" id="music-title">loveis</span>
+      <button class="music-close" id="music-close">×</button>
+    </div>
+    <div class="music-controls">
+      <button id="play-pause-btn" class="play-pause">▶</button>
+      <div class="music-bar">
+        <div class="music-bar-fill" id="music-bar-fill"></div>
+      </div>
+      <span class="music-time" id="music-time">0:00</span>
+    </div>
+    <div class="playlist">
+      <div class="playlist-item active" data-src="loveis.mp3">love is -TheRiddles</div>
+      <div class="playlist-item" data-src="pretty.mp3">prettiest Thing -Lanny</div>
+      <div class="playlist-item" data-src="anything.mp3">anything 4 u -LANNY</div>
+      <div class="playlist-item" data-src="bewithyou.mp3">be withy ou -TheRiddles</div>
+    </div>
+    <audio id="audio-player">
+      <source src="loveis.mp3" type="audio/mpeg" />
+    </audio>
+  </div>
+</div>
+
+  <!-- ─── FALLING PETALS CANVAS ─────────────────────────────── -->
+  <canvas id="petal-canvas"></canvas>
+
+  <!-- ─── CUSTOM CURSOR ─────────────────────────────────────── -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursor-dot"></div>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       HERO SECTION
+  ════════════════════════════════════════════════════════════════ -->
+  <section id="hero" class="section hero">
+    <div class="hero-bg-texture"></div>
+
+    <!-- Floating tape accents -->
+    <div class="tape tape-top-left"></div>
+    <div class="tape tape-top-right"></div>
+
+    <!-- Deco floaters -->
+    <div class="hero-deco star-1">✦</div>
+    <div class="hero-deco star-2">✦</div>
+    <div class="hero-deco heart-float-1">♡</div>
+    <div class="hero-deco tulip-1">❧</div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal-up" id="hero-eyebrow">— a little something, just for you —</p>
+      <h1 class="hero-title reveal-up">
+        <span class="hero-title-big" id="hero-title-big">My Favorite</span>
+        <span class="hero-title-script" id="hero-title-script">person.</span>
+      </h1>
+      <p class="hero-subtitle reveal-up" id="hero-subtitle">
+        Since the moment you walked into my life, every single day<br/>
+        has felt like the most beautiful accident.
+      </p>
+      <a href="#collage" class="hero-cta reveal-up">Memories! ↓</a>
+    </div>
+
+    <!-- Polaroid stack on hero -->
+    <div class="hero-polaroids">
+      <div class="polaroid hero-pol-1 reveal-up" data-tilt>
+        <img src="first.jpg" class="polaroid-img" style="object-fit:cover;" />
+        <p class="polaroid-caption" id="pol-cap-1">us ♡</p>
+      </div>
+      <div class="polaroid hero-pol-2 reveal-up" data-tilt>
+<img src="second.jpg" class="polaroid-img" style="object-fit:cover;" />
+        <p class="polaroid-caption" id="pol-cap-2">always</p>
+      </div>
+    </div>
+
+    <!-- Flower decoration -->
+    <div class="hero-flower">❀</div>
+    <div class="hero-flower hero-flower-2">✿</div>
+
+    <div class="hero-scroll-hint">scroll ↓</div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════════════
+       PHOTO & VIDEO COLLAGE SECTION
+  ════════════════════════════════════════════════════════════════ -->
+  <section id="collage" class="section collage-section">
+    <div class="section-tape tape-left"></div>
+
+    <div class="collage-header reveal-up">
+      <span class="section-eyebrow">✦ our little moments ✦</span>
+      <h2 class="section-title">Photographs</h2>
+    </div>
+
+    <div class="collage-grid" id="collage-grid">
+      <!-- Polaroids injected by JS -->
+    </div>
+
+    <!-- Divider -->
+    <div class="collage-divider reveal-up">
+      <div class="divider-line"></div>
+      <span class="divider-text">✦ moving pictures ✦</span>
+      <div class="divider-line"></div>
+    </div>
+
+    <div class="collage-sub-header reveal-up">
+      <h2 class="section-title">Videos</h2>
+    </div>
+
+    <div class="video-grid" id="video-grid">
+      <!-- Videos injected by JS -->
+    </div>
+
+    <div class="collage-deco-text">memories</div>
+  </section>
+
+
+ 
+
+
+
+
+
+  <!-- ═══════════════════════════════════════════════════════════
+       MEMORY WALL
+  ════════════════════════════════════════════════════════════════ -->
+  <section id="memory-wall" class="section memory-section">
+    <div class="memory-header reveal-up">
+      <span class="section-eyebrow">✦ wall ✦</span>
+      <h2 class="section-title">Notes</h2>
+    </div>
+
+    <div class="masonry-grid" id="masonry-grid">
+      <!-- Injected by JS -->
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════════════
+       LOVE LETTER SECTION
+  ════════════════════════════════════════════════════════════════ -->
+  <section id="love-letter" class="section letter-section">
+    <div class="letter-wrap">
+      <div class="letter-paper" id="letter-paper">
+        <div class="letter-fold-effect"></div>
+        <div class="letter-header reveal-up">
+          <span class="section-eyebrow" style="color:var(--olive)">✦ June / 09 / 2026 ✦</span>
+          <h2 class="section-title" style="color:var(--warm-brown)">Dearest Shiela,</h2>
+        </div>
+        <div class="letter-body reveal-up" id="letter-body">
+          <!-- Injected by JS -->
+        </div>
+        <div class="letter-signature reveal-up" id="letter-sig">
+          <!-- Injected by JS -->
+        </div>
+      </div>
+      <!-- Decorative wax seal -->
+      <div class="wax-seal">♥</div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════════════
+       FINAL SECTION
+  ════════════════════════════════════════════════════════════════ -->
+  <section id="final" class="section final-section">
+    <div class="final-bg"></div>
+
+    <div class="final-content">
+      <div class="final-heart" id="final-heart">♥</div>
+      <h2 class="final-headline reveal-up" id="final-headline">
+        Out of all the people<br/>in the whole world,
+      </h2>
+      <p class="final-subline reveal-up" id="final-subline">
+        I'm grateful to have been chosen by you.<br/>Every single time.
+      </p>
+
+      <div class="final-sig reveal-up">
+        <div class="sig-line"></div>
+        <p class="sig-name" id="sig-from">With all my heart,</p>
+        <p class="sig-name sig-actual" id="sig-name-from">— Me ♡</p>
+      </div>
+    </div>
+
+    <!-- Floating hearts -->
+    <div class="final-hearts" id="final-hearts"></div>
+
+    <!-- Flower field -->
+    <div class="final-flowers">
+      <span>❀</span><span>✿</span><span>❁</span><span>✾</span>
+      <span>❀</span><span>✿</span><span>❧</span><span>❀</span>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
