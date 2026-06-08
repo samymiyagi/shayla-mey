@@ -86,7 +86,7 @@ const CONFIG = {
     { url: "v1.MOV", caption: "Your so fasttt \u2665" },
     { url: "v2.MOV", caption: "I love you babbyy"           },
     { url: "v3.MOV", caption: "Talo kaa"         },
-    { url: "v4.MOV", caption: "How many takes?"            },
+    { url: "vid.MOV", caption: "Cookiess!!!"            },
     { url: "v5.MOV", caption: "Passenger Prince?"            },
     { url: "v6.MOV", caption: "Before Defense \u2665" },
     { url: "v7.MOV", caption: "Healthy Living"           },
